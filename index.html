@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ryan Dowman | Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.ico">
+        <link rel="stylesheet" href="styles.css"> 
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav>
+            <div class="links">
+                <a href="#"><div class="link">Home</div></a>
+                <a href="#portfolio"><div class="link">Portfolio</div></a>
+                <a href="#about"><div class="link">About</div></a>
+                <a href="#contact"><div class="link">Contact</div></a>
+                <img class="contrast" src="images/contrast.svg" alt="Contrast Toggle" onclick="contrastToggle()"/>
+            </div>
+            <img class="nav-logo" src="images/logo.svg" alt="Navagation Logo"/>
+        </nav>
+        <div class="mobile-nav">
+            <img class="nav-logo" src="images/logo.svg" alt="Navagation Logo"/>
+            <div class="hamburger-menu" onclick="slide(false)">
+                <div class="triangle"></div>
+                <div class="triangle triangle2"></div>
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="herosection-maincontent">
+            <div class="brand">
+                <img class="brand-logo" src="images/logo.svg" alt="Brand Logo"/>
+                <div class="separator"></div>
+                <div class="brand-name">RYAN<br/>DOWMAN</div>
+            </div>
+            <div class="slogan" id="slogan">DEVELOPMENT MADE BEAUTIFUL AND SIMPLE</div>
+            <a href="#portfolio"><div class="mywork-button">My Work</div></a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-ball"></div>
+        </div>
+        <div class="slider-menu" id="slider">
+            <div class="slider-container">
+                <div class="slider-hamburger-menu" onclick="slide(true)">
+                    <div class="triangle"></div>
+                    <div class="triangle triangle2"></div>
+                    <div class="triangle"></div>
+                </div>
+                <div class="slider-link-container">
+                    <a href="#"><div class="slider-link">Home</div></a>
+                    <div class="spacer"></div>
+                </div>
+                <div class="slider-link-container">
+                    <a href="#portfolio"><div class="slider-link">Portfolio</div></a>
+                    <div class="spacer"></div>
+                </div>
+                <div class="slider-link-container">
+                    <a href="#about"><div class="slider-link">About</div></a>
+                    <div class="spacer"></div>
+                </div>
+                <div class="slider-link-container">
+                    <a href="#contact"><div class="slider-link">Contact</div></a>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contrast-info" id="contrast-popup">High Contrast On</div>
+        <div class="portfolio" id="portfolio">
+            <h1 class="depth">PORTFOLIO</h1>
+            <div class="projects">
+                <div class="project">
+                    <img src="images/p1.png" alt="Project 1"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+                <div class="project">
+                    <img src="images/p2.png" alt="Project 2"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+                <div class="project">
+                    <img src="images/p3.png" alt="Project 3"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+                <div class="project">
+                    <img src="images/p4.png" alt="Project 4"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+                <div class="project">
+                    <img src="images/p5.png" alt="Project 5"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+                <div class="project">
+                    <img src="images/p6.png" alt="Project 6"/>
+                    <p>Simple personal portfolio, made through the use of logo design and skill. Utilisation of bright vivbrant colors for contrast and UI and UX standrads and meets all levels of accessability</p>
+                </div>
+        
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="depth">ABOUT ME</h1>
+            <div class="content-container">
+                <div class="about-lhs">
+                    <p class="about-text">I am someone who loves to <span>create</span>. <br/><br/> I have always enjoyed being hands on with development and enjoy bringing projects from start to finish. I have a high level of pride in my work and it grants me personal responsibility for what I deliver.</p>
+                    <a href="#portfolio"><div class="mywork-button">Socials</div></a>
+                </div>
+                <img class="portrait" src="images/portrait.PNG">
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="depth">CONTACT</h1>
+            <div class="contact-container">
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" class="contact-forms" method="POST"> 
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required><br> 
+                    <label for="email">Email</label><br> 
+                    <input type="text" id="email" name="email" required><br> 
+                    <label for="message" class="message-field">Message</label><br>
+                    <textarea rows="4" cols="50" id="message" name="message" maxlength="500" required></textarea> <!--Use of text area to allow a larger and flexible field due to the larger need for content-->
+                    <input class="mywork-button" id="send-button" type="submit" value="Send"> </form></form>
+                </form>
+                <div class="contact-rhs">
+                    <p class="contact-text">If you are interested in my work or wish to chat feel free to drop a message.</p>
+                    <div class="contact-links">
+                        <div class="circle" id="c1"></div>
+                        <div class="circle" id="c2"></div>
+                        <div class="circle" id="c3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>Copyright &#169; Ryan Dowman | All Rights Reserved | Contact: c3397839@uon.edu.au</footer>
+        <script src="function.js"></script>
+    </body>
+</html>
